@@ -1,0 +1,69 @@
+body {
+	font-family: Arial, sans-serif;
+	margin: 0;
+	padding: 0;
+}
+
+header {
+	background-color: #1c1c1c;
+	color: white;
+	padding: 20px;
+}
+
+table {
+	border-collapse: collapse;
+	margin: 20px;
+	width: calc(100% - 40px);
+}
+
+thead {
+	background-color: #1c1c1c;
+	color: white;
+}
+
+th, td {
+	padding: 10px;
+	text-align: center;
+}
+
+
+
+.button-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.button-container button {
+  background-color: #4CAF50;
+  border: none;
+  color: white;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+
+
+
+
+.background{
+    background-color: #1c1c1c;
+    color: white;
+}
+
+.timer-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.timer-container p {
+  font-size: 20px;
+}
+

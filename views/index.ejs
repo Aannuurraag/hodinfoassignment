@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Cryptocurrency Data</title>
+	<link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+	<header>
+		<h1>Hodlinfo.com </h1>
+  <p>provided by Finstreet</p>
+    <div class="button-container">
+  <button id="inr-button">INR</button>
+  <button id="btc-button">BTC</button>
+  <button id="btc-button">BUYBTC</button>
+
+<div class="timer-container">
+  <p id="timer"></p>
+</div>
+
+
+	</header>
+	<main>
+		<table>
+			<thead>
+				<tr>
+					<th>Name</th>
+					<th>Last</th>
+					<th>Buy Price</th>
+					<th>Sell Price</th>
+					<th>Volume</th>
+					<th>Base Unit</th>
+				</tr>
+			</thead>
+			<tbody>
+                <% datas.forEach(data => { %>
+                    <tr class="background">
+                      <td><%= data.name %></td>
+                      <td> &#8377;<%= data.last %></td>
+                      <td> &#8377;<%= data.buy %></td>
+                      <td> &#8377;<%= data.sell %></td>
+                      <td><%= data.volume %></td>
+                      <td><%= data.base_unit %></td>
+				    </tr>
+                    <% }) %>
+				<!-- Here, we will generate the table rows using JavaScript -->
+			</tbody>
+		</table>
+	</main>
+	<script src="script.js"></script>
+</body>
+</html>
