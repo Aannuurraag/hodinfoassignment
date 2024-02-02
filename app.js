@@ -45,7 +45,7 @@ app.use(express.json());
 // Fetch data from WazirX API and store in MongoDB
 app.get('/fetchAndStoreData', async (req, res) => {
   try {
-    const response = await axios.get('https://api.wazirx.com/api/v2/tickers');
+    const response = await axios.get(process.env.API);
     const Fetchdata = response.data;
 
     // Clear existing data
